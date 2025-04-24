@@ -42,5 +42,5 @@ if [[ ${#first_word} -gt 0  ]] && [[ ${#second_word} -gt 0  ]] ;
 then
 
     newWord="${first_word} ${second_word}"
-    echo $newWord | md5sum > hashes_contraseñas
+    echo -n $newWord | md5sum > hashes_contraseñas
 fi
